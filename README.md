@@ -1,4 +1,7 @@
 # iot-using-csharp-and-firebasebase
+
+![image](https://user-images.githubusercontent.com/77415599/147707713-cf2e3b35-2372-4476-a7bd-9aa8adf237b9.png)
+
 In summary:
 Mode selection is made from the UI created with C#. The selection is processed to firebase. This data is received from the firebase with Raspberry Pi and transmitted to MSP430G2553 with UART. According to the selected mode, the strip led lights up.
 
