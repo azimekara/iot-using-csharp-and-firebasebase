@@ -9,11 +9,11 @@ The user clicks on the button of the mode they want to select. This action disab
 
 ![image](https://user-images.githubusercontent.com/77415599/147702129-0ec2d7ad-d673-451f-883a-b9897e8fb7a2.png)
 
--Default Firbase  
+- Default Firbase  
 
 ![image](https://user-images.githubusercontent.com/77415599/147705856-19e001ec-7ce4-488e-a209-c23d5fc61497.png)
 
--1 Index of Mod1 is Selected
+- 1 Index of Mod1 is Selected
 
 ![image](https://user-images.githubusercontent.com/77415599/147706346-e3bd779e-a7c4-446f-8175-7936368531ab.png)
 
