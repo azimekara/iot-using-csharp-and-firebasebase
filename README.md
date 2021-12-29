@@ -5,7 +5,7 @@ Mode selection is made from the UI created with C#. The selection is processed t
 ### C# Working Principle
 The user clicks on the button of the mode they want to select. This action disables other modes and prevents two modes from being selected at the same time. After selecting the mode and the desired option, the "Send" button is clicked to send the data (index of the selected + 2) to firebase. If the user wants to select a new mode, he must press the "Reset" button.(This operation is valid for the first 3 modes and the button on the hardware must be pressed in order for "Mode4" to be active.)
 
--UI Prepared with C#
+- UI Prepared with C#
 
 ![image](https://user-images.githubusercontent.com/77415599/147702129-0ec2d7ad-d673-451f-883a-b9897e8fb7a2.png)
 
