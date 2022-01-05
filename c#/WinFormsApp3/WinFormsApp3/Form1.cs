@@ -33,8 +33,8 @@ namespace WinFormsApp3
 
         IFirebaseConfig config = new FirebaseConfig()
         {
-            AuthSecret = "afCtYBz0zWi4i9meDHeeXtOBB54uixf8sW40LZ3V",
-            BasePath = "https://iotusingcsharpandfirebase-default-rtdb.firebaseio.com/"
+            AuthSecret = "database key",
+            BasePath = "your database link"
         };
 
         IFirebaseClient client;
