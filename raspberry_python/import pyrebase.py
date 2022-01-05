@@ -7,10 +7,10 @@ received_data = 0
 int_val = 0
 
 config = {
-  "apiKey": "afCtYBz0zWi4i9meDHeeXtOBB54uixf8sW40LZ3V",
-  "authDomain": "iotusingcsharpandfirebase.firebaseapp.com",
-  "databaseURL": "https://iotusingcsharpandfirebase-default-rtdb.firebaseio.com",
-  "storageBucket": "iotusingcsharpandfirebase.appspot.com"
+  "apiKey": "..............",
+  "authDomain": ".................",
+  "databaseURL": "......................",
+  "storageBucket": "......................"
 }
 
 firebase = pyrebase.initialize_app(config)
