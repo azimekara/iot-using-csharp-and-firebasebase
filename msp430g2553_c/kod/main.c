@@ -182,7 +182,6 @@ __interrupt void ADC10_ISR(void)
 __interrupt void Port_1(void)
 {
     UCA0TXBUF = 1;
-    P1OUT ^= BIT0;
     P1IFG &= ~BIT7;
 }
 
