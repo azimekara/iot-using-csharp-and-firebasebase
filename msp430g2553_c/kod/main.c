@@ -84,7 +84,7 @@ int main(void)
     TA1CCR2 = 0;          // PWM3 DUTY CYCLE        P2.5       Blue
 
 //
-//Harici Kesme Configurasyonu P1.3 input select
+//Harici Kesme Configurasyonu P1.7 input select
 //
 
     P1DIR &= ~BIT7; // P1.7 BUTTON INPUT
@@ -93,19 +93,19 @@ int main(void)
     P1REN |= BIT7; // pull up /pull down aktif
     P1OUT |= BIT7; // pull UP direnci aktif
 
-    P1IES |= BUTTON;  // P1.7 D¸˛en Kenar olduunda harici kesmeye girer
-    P1IE = BUTTON;  //interrupt enables for P1.3
+    P1IES |= BUTTON;  // P1.7 D√º√æen Kenar oldu√∞unda harici kesmeye girer
+    P1IE = BUTTON;  //interrupt enables for P1.7
     P1IFG &= ~BIT7;
 
     //
-    //UART CONF›GURAT›ON
+    //UART CONF√ùGURAT√ùON
     //
 
-    P1SEL |= BIT1 + BIT2;  // P1.1/P1.2 rx/tx olarak kullanmak iÁin yap˝lan ayar
+    P1SEL |= BIT1 + BIT2;  // P1.1/P1.2 rx/tx olarak kullanmak i√ßin yap√Ωlan ayar
     P1SEL2 |= BIT1 + BIT2;
-    UCA0CTL1 |= UCSSEL_2;   //SMCLK   i˛lemciden gelen clocku ald˝
+    UCA0CTL1 |= UCSSEL_2;   //SMCLK   i√ælemciden gelen clocku ald√Ω
     UCA0BR0 = 8;
-    UCA0MCTL |= UCBRS2 + UCBRS1; // hata pay˝n˝ g˝dermek ˝c˝n modulasyon katsay˝s˝
+    UCA0MCTL |= UCBRS2 + UCBRS1; // hata pay√Ωn√Ω g√Ωdermek √Ωc√Ωn modulasyon katsay√Ωs√Ω
     UCA0CTL1 &= ~UCSWRST;       //aktif etti
     IE2 |= UCA0RXIE;   // interrupt aktif etti
 
@@ -115,7 +115,7 @@ int main(void)
 
     ADC10CTL0 &= ~ENC;
     ADC10AE0 |= BIT3;                         // PA.3 ADC option select input
-    ADC10CTL0 = ADC10SHT_3 + ADC10ON + ADC10IE; // ADC 64 ornekleme s¸resi ,ADC10ON, interrupt enabled,
+    ADC10CTL0 = ADC10SHT_3 + ADC10ON + ADC10IE; // ADC 64 ornekleme s√ºresi ,ADC10ON, interrupt enabled,
     ADC10CTL1 = INCH_3;                       // ADC10 input Channel Select Bit3
     ADC10CTL0 &= ~ADC10IFG;
     ADC10CTL0 |= ENC + ADC10SC;             //Sampling and conversion start
