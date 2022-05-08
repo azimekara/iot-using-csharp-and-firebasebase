@@ -52,8 +52,6 @@ int main(void)
     DCOCTL = CALDCO_1MHZ;
     __delay_cycles(100000);
 
-    P1DIR |= BIT0;
-
     //
     //PWM PINS OUTPUT SETTINGS
     //
